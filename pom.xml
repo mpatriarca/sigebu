@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  
+  <modelVersion>4.0.0</modelVersion>
+  
+  <parent>
+    <artifactId>comunicar</artifactId>
+    <groupId>ar.com.comunicar</groupId>
+    <version>1.0.0</version>
+  </parent>
+  
+  <groupId>ar.com.comunicar</groupId>
+  
+  <artifactId>common</artifactId>
+  
+  <version>1.0.0</version>
+  
+  <name>common</name>
+  
+  <url>http://maven.apache.org</url>
+  
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <comunicar.version>1.0.0</comunicar.version>
+  </properties>
+  
+  <dependencies>
+		<!-- Apache Velocity   -->
+		<dependency>
+			<groupId>org.apache.velocity</groupId>
+			<artifactId>velocity</artifactId>
+			<version>1.7</version>
+			<exclusions>
+				<exclusion>
+					<groupId>commons-lang</groupId>
+					<artifactId>commons-lang</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<!-- /Apache Velocity   -->
+
+  </dependencies>
+  
+</project>
